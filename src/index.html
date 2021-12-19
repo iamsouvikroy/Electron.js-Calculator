@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Souvik's Calculator</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <div class="container">
+      <table>
+        <tr>
+          <td colspan="4">
+            <h1>Souvik's Calculator</h1>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="4">
+            <input disabled type="text" id="display">
+          </td>
+        </tr>
+        <tr>
+          <td><button onclick="displaynum('(')">(</button></td>
+          <td><button onclick="displaynum(')')">)</button></td>
+          <td><button id="clear">AC</button></td>
+          <td><button id="backspace"><ion-icon name="backspace-outline"></ion-icon></td>
+        </tr>
+        <tr>
+          <td><button onclick="displaynum('%')">%</button></td>
+          <td><button id="square">x²</button></td>
+          <td><button id="sqrt">√x</button></td>
+          <td><button onclick="displaynum('/')">/</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="displaynum('7')">7</button></td>
+          <td><button onclick="displaynum('8')">8</button></td>
+          <td><button onclick="displaynum('9')">9</button></td>
+          <td><button onclick="displaynum('*')">*</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="displaynum('4')">4</button></td>
+          <td><button onclick="displaynum('5')">5</button></td>
+          <td><button onclick="displaynum('6')">6</button></td>
+          <td><button onclick="displaynum('-')">-</button></td>
+        </tr>        
+        <tr>
+          <td><button onclick="displaynum('1')">1</button></td>
+          <td><button onclick="displaynum('2')">2</button></td>
+          <td><button onclick="displaynum('3')">3</button></td>
+          <td><button onclick="displaynum('+')">+</button></td>
+        </tr>
+        <tr>
+          <td><button onclick="displaynum('0')">0</button></td>
+          <td><button onclick="displaynum('.')">.</button></td>
+          <td colspan="2"><button id="equal">=</button></td>
+        </tr>  
+      </table>
+    </div>
+
+    <!--Scripts-->
+    <script src="render.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

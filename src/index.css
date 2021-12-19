@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:wght@500;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  margin-top: 10px;
+  font-family: "Alata";
+  font-weight: 300;
+  text-align: center;
+  user-select: none;
+  color: #4845ff;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(255, 255, 255);
+  padding: 10px 10px 10px 10px;
+  border-radius: 20px;
+}
+
+.container input {
+  width: 290px;
+  height: 50px;
+  background: transparent;
+  border: none;
+  text-align: right;
+  font-family: "Alata";
+  font-size: 30px;
+  font-weight: bold;
+  color: #5e5eff;
+}
+
+.container input:focus {
+  outline: none;
+}
+
+.container button {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  user-select: none;
+  color: #4545ff;
+  width: 70px;
+  height: 70px;
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 0 2px 0 rgb(210, 210, 255);
+}
+
+.container button:hover {
+  font-size: larger;
+  font-weight: 900;
+  box-shadow: 0 0 2px 0 #5e5eff;
+}
+
+#equal {
+  width: 144px;
+  background-color: #ffffff;
+  border-radius: 50px;
+  color: #4545ff;
+}
+
+#equal:hover {
+  background-color: #4545ff;
+  color: white;
+}
