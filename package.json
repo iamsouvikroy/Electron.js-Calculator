@@ -1,6 +1,6 @@
 {
-  "name": "souviks-calculator",
-  "productName": "Souvik's Calculator",
+  "name": "electron.js-calculator-by-souvik-roy",
+  "productName": "Electron.js Calculator by Souvik Roy",
   "version": "1.0.0",
   "description": "My Electron application description",
   "icon": "./src/calculator.ico",
