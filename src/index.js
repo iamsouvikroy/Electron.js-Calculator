@@ -1,4 +1,4 @@
-const { app, BrowserWindow } = require("electron");
+const { app, BrowserWindow, autoUpdater } = require("electron");
 const path = require("path");
 
 if (require("electron-squirrel-startup")) {
@@ -7,12 +7,11 @@ if (require("electron-squirrel-startup")) {
 
 const createWindow = () => {
   const mainWindow = new BrowserWindow({
-    width: 360,
-    height: 660,
+    height: 667,
+    width: 234,
     icon: __dirname + './calculator.ico'
   });
 
-  mainWindow.setResizable(false)
   mainWindow.loadFile(path.join(__dirname, "index.html"));
   mainWindow.setMenuBarVisibility(false)
 };

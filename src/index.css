@@ -1,13 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:wght@500;700&display=swap");
 
+/*@keyframes hoverborder {
+  25% {
+    border-left: 1px solid #4845ff;
+  }
+  50% {
+    border-top: 1px solid #4845ff;
+  }
+  75% {
+    border-right: 1px solid #4845ff;
+  }
+  100% {
+    border-bottom: 1px solid #4845ff;
+  }
+}*/
+
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
 }
 
 h1 {
+  grid-column: 1 / span 4;
   margin-top: 10px;
   font-family: "Alata";
   font-weight: 300;
@@ -16,21 +31,27 @@ h1 {
   color: #4845ff;
 }
 
-.container {
+.grid-container {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  justify-content: stretch;
+  display: grid;
+  column-gap: 5px;
+  row-gap: 5px;
+  grid-template-columns: 70px 70px 70px 70px;
+  grid-template-rows: 70px 70px 70px 70px 70px 70px 70px 70px;
   background-color: rgb(255, 255, 255);
   padding: 10px 10px 10px 10px;
   border-radius: 20px;
 }
 
-.container input {
-  width: 290px;
-  height: 50px;
-  background: transparent;
+.grid-container input {
   border: none;
+  text-overflow: initial;
+  grid-column: 1 / span 4;
+  background: transparent;
   text-align: right;
   font-family: "Alata";
   font-size: 30px;
@@ -38,34 +59,34 @@ h1 {
   color: #5e5eff;
 }
 
-.container input:focus {
+.grid-container input:focus {
   outline: none;
+  border-bottom: 1px solid #6b10ff;
 }
 
-.container button {
+.grid-container button {
+  padding: 0;
   font-size: 18px;
   font-weight: 400;
   font-family: "Montserrat", sans-serif;
   user-select: none;
   color: #4545ff;
-  width: 70px;
-  height: 70px;
   border: none;
   border-radius: 10px;
   background-color: white;
-  box-shadow: 0 0 2px 0 rgb(210, 210, 255);
+  box-shadow: 0 0 2px 0 rgb(197, 197, 255);
 }
 
-.container button:hover {
+.grid-container button:hover {
   font-size: larger;
   font-weight: 900;
   box-shadow: 0 0 2px 0 #5e5eff;
 }
 
 #equal {
-  width: 144px;
+  grid-column: 3 / span 2;
   background-color: #ffffff;
-  border-radius: 50px;
+  /* border-radius: 50px; */
   color: #4545ff;
 }
 
